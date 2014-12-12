@@ -363,6 +363,8 @@ var _gsScope = (typeof(module) !== "undefined" && module.exports && typeof(globa
 				return m;
 			},
 			_getConcatenatedMatrix = function(e, invert) {
+				e = (typeof unwrap === "function") ? unwrap(e) : e;
+				
 				if (!e || e === window || !e.parentNode) {
 					return [1,0,0,1,0,0];
 				}
