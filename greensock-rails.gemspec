@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'greensock/rails/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "greensock-rails"
+  spec.name          = "greensock-rails-polyfill"
   spec.version       = Greensock::Rails::VERSION
   spec.authors       = ["Robert Pataki, Greensock Team"]
   spec.email         = ["robert@robertpataki.com"]
